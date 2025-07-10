@@ -8,7 +8,7 @@ type props =  ViewProps & {
 }
 
 
-export function screenWrapper({children,bg, ...props}: props)  {
+export function ScreenWrapper({children,bg, ...props}: props)  {
 
     const {top} = useSafeAreaInsets()
     const paddingTop = top>0 ? top + 5 : 30
