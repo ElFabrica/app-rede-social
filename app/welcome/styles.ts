@@ -21,10 +21,13 @@ export const styles = StyleSheet.create({
         color: theme.colors.text,
         fontSize:hp(4),
         textAlign:"center",
+        fontWeight: theme.fonts.extraBold
     },
     punchible:{
         textAlign:"center",
-        paddingHorizontal:wp(10)
+        paddingHorizontal:wp(10),
+        fontSize: hp(1.7),
+        color: theme.colors.text
     }
     
 })

@@ -1,3 +1,16 @@
+type FontWeight =
+  | '100' | 100
+  | '200' | 200
+  | '300' | 300
+  | '400' | 400
+  | '500' | 500
+  | '600' | 600
+  | '700' | 700
+  | '800' | 800
+  | '900' | 900
+  | 'normal'
+  | 'bold';
+
 export const theme = {
   colors: {
     primary: '#00C26F',
@@ -15,10 +28,10 @@ export const theme = {
   },
 
   fonts: {
-    medium: '500',
-    semibold: '600',
-    bold: '700',
-    extraBold: '800',
+    medium: '500' as FontWeight,
+    semibold: '600' as FontWeight,
+    bold: '700' as FontWeight,
+    extraBold: '800' as FontWeight,
   },
 
   radius: {
@@ -29,4 +42,4 @@ export const theme = {
     xl: 18,
     xxl: 22,
   },
-}
+};

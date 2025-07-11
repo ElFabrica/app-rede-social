@@ -3,6 +3,7 @@ import React from 'react'
 import { ScreenWrapper } from '@/components/screenWrapper'
 import {StatusBar} from "expo-status-bar"
 import { styles } from './styles'
+import { Button } from '@/components/button'
 
 export function Welcome() {
     return (
@@ -14,6 +15,7 @@ export function Welcome() {
             <Image
             source={require("../../assets/images/welcome.png")}
             resizeMode='contain'
+            style={styles.welcomeImage}
             />
             {/* Title */}
             <View style={styles.containerText} >
@@ -24,6 +26,18 @@ export function Welcome() {
                 <Text style ={styles.punchible}>
                     Where every thought find a home and every image tells a story
                 </Text>
+
+            </View>
+            {/*footer */}
+            <View style={styles.footer}>
+
+                <Button
+                title='Entrar'
+                hasShadow={true}
+                loading={false}
+                />
+
+
 
             </View>
         </View>
