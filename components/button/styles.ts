@@ -29,6 +29,8 @@ export const styles = StyleSheet.create({
     },
     textStyle:{
 
-    }
+    },
+        
+    
 
 })

@@ -4,6 +4,7 @@ import { ScreenWrapper } from '@/components/screenWrapper'
 import {StatusBar} from "expo-status-bar"
 import { styles } from './styles'
 import { Button } from '@/components/button'
+import { Loading } from '@/components/Loading'
 
 export function Welcome() {
     return (
@@ -36,9 +37,11 @@ export function Welcome() {
                 hasShadow={true}
                 loading={false}
                 />
+                <Loading
+                size={14}
+                />
 
-
-
+        
             </View>
         </View>
 
