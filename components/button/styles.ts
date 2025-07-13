@@ -16,7 +16,11 @@ export const styles = StyleSheet.create({
         marginHorizontal:wp(3)
     },
     shadowStyle:{
-
+        shadowColor: theme.colors.dark,
+        shadowOffset: {width: 0, height: 10},
+        shadowOpacity: 0.2,
+        shadowRadius: 8,
+        elevation: 4
     },
     text:{
         fontSize: hp(2.5),
